@@ -43,12 +43,12 @@ $("#addAnimal").on("click"),
         //We're using a form so that the user can hit enter instead of clicking the button if they want
         event.preventDefault();
         // This line grabs the input from the textbox
-        var animal = $("#animal-input").val().trim();
+        var animals = $("#animal-input").val().trim();
         //Adding the animal from the textbox to our array
         topics.push(animal);
         // Calling renderButtons which handles the processing of our movie array
         renderButtons();
-        console.log();
+        
 
 
     }
