@@ -10,6 +10,10 @@ var animalButtons
 //web URL with api key
 var queryURL = "https://giphy.com/search/animals&apikey=tFriDfADykrYHsiVZS1J7YhZimeGAIBQ";
 
+var animalButtons
+//web URL with api key
+var queryURL = "https://giphy.com/search/animals&apikey=tFriDfADykrYHsiVZS1J7YhZimeGAIBQ";
+
 var animalInput = "";
 var addAnimal = "";
 var topics = ["birds", "monkeys", "bears", "pigs", "dog", "cat", "rabbit", "turtle", "gophur"];
@@ -37,21 +41,22 @@ function renderButtons() {
 }
 
 // This function handles events where one button is clicked
-$("#addAnimal").on("click"), 
-    function(event) {
+function addButton() {
         //event.preventDefault() prevents the form from trying to submit itself.
         //We're using a form so that the user can hit enter instead of clicking the button if they want
         event.preventDefault();
         // This line grabs the input from the textbox
-        var animals = $("#animal-input").val().trim();
+        var animal = $("#animal-input").val().trim();
         //Adding the animal from the textbox to our array
         topics.push(animal);
         // Calling renderButtons which handles the processing of our movie array
         renderButtons();
-        
+        // console.log();
+        $('#animal-input').val(''); //clears the value and resets 
+};
 
-
-    }
+$(document).on("click", "#addAnimal", addButton);
+ 
 
 imageUrl = [];
 stillimageUrl = [];
