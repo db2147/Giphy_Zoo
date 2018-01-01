@@ -24,16 +24,16 @@ function renderButtons() {
     // (this is necessary otherwise we will have repeat buttons)
     $("#animalButtons").empty();
 
-    // Looping through the array of movies
+    // Looping through the array of animals
     for (var i = 0; i < topics.length; i++) {
 
         //this code is all jquery needs to create the start and end tag (<button></button)
         var a = $("<button>");
         //adding a class
         a.addClass("animal")
-        // Adding a data-attribute with a value of the movie at index i
+        // Adding a data-attribute with a value of the animal at index i
         a.attr("data-name", topics[i]);
-        // Providing the button's text with a value of the movie at index i
+        // Providing the button's text with a value of the animal at index i
         a.text(topics[i]);
         // Adding the button to the html
         $("#animalButtons").append(a);
