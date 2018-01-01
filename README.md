@@ -10,7 +10,7 @@ In this project I used the GIPHY API to make a dynamic webpage that populates wi
 <br>
 <br>
 
- What I did to start is to create an array of strings related to animals.&nbsp; The app takes topics in my array and creates buttons in my HTML using jQuery and AJAX in the javascript file. &nbsp;I'm using a four loop that appends a button for each string in the array.&nbsp; Here is an example using my for loop. &nbsp; This makes it much more efficiant than trying to create all the buttons individually.
+ What I did to start is to create an array of strings related to animals.&nbsp; The app takes topics in my array and creates buttons in my HTML using jQuery and AJAX in the javascript file. &nbsp;I'm using a four loop that appends a button for each string in the array.&nbsp; Here is an example using my for loop. &nbsp; This makes it much more efficiant than trying to create all the buttons individually:
 <br>
 <br>
 <img src="css/images/animal.png" alt="Drawing" style="width: 500px; float: right;" />
